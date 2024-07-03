@@ -1,0 +1,71 @@
+.explore {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  padding: 168px 0px;
+  background: #e9f7fe;
+  &__top {
+    padding: 118px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    &__cards {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    h1{
+        font-size: 55px;
+    }
+    &__body {
+      padding-bottom: 100px;
+      &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        min-height: 220px;
+        text-align: start;
+        padding: 35px;
+        padding-top: 50px;
+        gap: 20px;
+        img {
+          width: 25px !important;
+          height: 25px !important;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

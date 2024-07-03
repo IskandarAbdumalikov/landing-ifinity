@@ -1,0 +1,104 @@
+.hero {
+  background: url(../../assets/hero.svg) no-repeat center/cover;
+  min-height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__top {
+    padding: 300px 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    h1 {
+      font-size: 70px;
+    }
+    h3 {
+      font-size: 21px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0px 170px;
+    height: 107px;
+    form {
+      height: 100%;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      button {
+        flex: 1;
+        border: none;
+        background: transparent;
+        font-size: 25px;
+      }
+      input {
+        border: none;
+        outline: none;
+        height: 100%;
+        width: 90%;
+        background: transparent;
+      }
+    }
+
+    select {
+      width: 30%;
+      height: 100%;
+      background: white;
+      outline: none;
+      border: none;
+    }
+
+    button {
+      flex: 1;
+      height: 100%;
+      background: white;
+
+      border: none;
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero__top {
+    padding: 50px !important;
+  }
+  .hero__bottom {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__top {
+    padding: 20px !important;
+    h1 {
+      font-size: 50px;
+    }
+  }
+  .hero__bottom {
+    padding: 0px 20px;
+    button {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .hero__top {
+    padding: 0px !important;
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .hero__bottom {
+    padding: 0px 0px;
+    button {
+      font-size: 16px;
+    }
+  }
+}

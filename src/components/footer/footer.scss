@@ -1,0 +1,23 @@
+footer {
+  background: #e9f7fe;
+  padding: 50px 0px;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .footer {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
